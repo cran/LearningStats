@@ -1,0 +1,47 @@
+#' 	SICRI: information system on risk-taking behaviour
+#'
+#' 	SICRI collects data on health-related behaviours, as long as they do not involve questions that can be considered sensitive or delicate, since with them simple self-declaration is not a way to obtain valid information. However, although the data collected will mainly refer to behaviours, data of another type may be collected for which simple self-declaration is an accommodated mode of measurement.
+#'
+#' @docType data
+#'
+#' @usage data(sicri2018)
+#'
+#' @format sicri2018 is a data frame with 7853 cases (rows) and 18 variables (columns) selected from the original and complete data base. The selection was done to have an overview of different types of random variables, as well as the topic interest for the students to discuss about.
+#'
+#' In what follows the explanation and codification of the different variables is detailed. For every variable, we provide its name on the data base, the explanation of its content and all the possible categories, whether it makes sense, with their codes on the data base between brackets.
+#'
+#' \tabular{ll}{
+#' sex \tab  men (1); women (2) \cr
+#' age \tab age in years \cr
+#' weight \tab weight in kilograms \cr
+#' height \tab height in centimetres \cr
+#' bmi \tab body mass index \cr
+#' prov \tab province: A Coruña (15); Lugo (27); Ourense (32); Pontevedra (36)\cr
+#' employ \tab employment situation: employed (1); unemployed (2); housework (3);\cr
+#' \tab retired (4); student (5); other (6) \cr
+#' education \tab educational level: no studies (1); basic level (2); medium level (3);\cr
+#' \tab upper level (4) \cr
+#' civilstat \tab civil status: living as a couple (1); not living as a couple (2)\cr
+#' smoke \tab whether has ever smoked: no (0); yes (1)\cr
+#' Ncigarw \tab number of cigaretts per week\cr
+#' TimeNS \tab time (in years) since the last time the person smoked\cr
+#' vac \tab whether the person trust vaccines: no (0); yes (1); not know (3)\cr
+#' Ndrinks \tab number of usual glasses drunk, any day the person takes alcoholic drinks\cr
+#' netuse \tab time (in minutes) surfing the Net in the last four weeks\cr
+#' game \tab whether the person has spent money on gambling in the last 12 months: no (0);\cr
+#' \tab yes (1)\cr
+#' blood \tab whether the person has ever been a blood donor \cr
+#' can \tab whether the person has ever smoked cannabis}
+#'
+#' @keywords dataset
+#'
+#' @source This data has been collected from SERGAS (Galician Health Service) Database on February 2021 \url{https://www.sergas.es/Saude-publica/SICRI-2018-Microdatos}
+#'
+#' @examples
+#' data(sicri2018)
+#' bmi <- sicri2018$bmi
+#' Histogram(bmi,col="pink")
+#'
+#'
+
+"sicri2018"
